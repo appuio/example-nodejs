@@ -210,3 +210,17 @@ If you get stuck at some point, or think that this document needs further detail
 ## License
 
 This code is dedicated to the public domain to the maximum extent permitted by applicable law, pursuant to [CC0](http://creativecommons.org/publicdomain/zero/1.0/).
+
+
+# NEWNEWNEWNEWNEWNEWNEWNEWNEWNEW
+
+oc new-project example-nodejs --display-name="example-nodejs" --description="Sample Node.js app"
+oc new-app https://github.com/appuio/example-nodejs.git -l name=example-nodejs-app
+oc policy add-role-to-user admin rlack -n example-nodejs
+
+
+## build project local
+npm install
+
+## run project local
+npm start
