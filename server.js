@@ -2,6 +2,7 @@
 var express = require('express'),
     fs      = require('fs'),
     app     = express(),
+    eps     = require('ejs'),
     morgan  = require('morgan');
     
 Object.assign=require('object-assign')
@@ -11,6 +12,12 @@ app.use(morgan('combined'))
 
 var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
     ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
+
+app.get('/', function (req, res) {
+  var count = 42;
+  res.render('index.html', { pageCountMessage : count });
+
+});
 
 // error handling
 app.use(function(err, req, res, next){

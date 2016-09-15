@@ -218,6 +218,8 @@ oc new-project example-nodejs --display-name="example-nodejs" --description="Sam
 oc new-app https://github.com/appuio/example-nodejs.git -l name=example-nodejs-app
 oc policy add-role-to-user admin rlack -n example-nodejs
 
+add Route
+
 
 ## build project local
 npm install
