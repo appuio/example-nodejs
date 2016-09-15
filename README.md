@@ -226,3 +226,9 @@ npm install
 
 ## run project local
 npm start
+
+## Automated build when Code changes with Github-Webhook
+The Project must be forked, so you can access the settings in github 
+In appuio project, Browse -> Builds -> click on Name (example-nodejs) -> Configuration -> copy GitHub webhook URL to clipboard -> Switch to project in Github -> go to Settings -> Webhooks & services -> Add webhook -> paste copied url in Field Payload URL -> Disable SSL Verification -> add Webhook
+
+(https://github.com/appuio/techlab/blob/lab-3.2/labs/09_dockerbuild_webhook.md)
